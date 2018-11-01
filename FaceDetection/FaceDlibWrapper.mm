@@ -29,9 +29,7 @@ typedef unsigned char uchar;
         //初始化 检测器
         NSString *modelFileName = [[NSBundle mainBundle] pathForResource:@"shape_predictor_68_face_landmarks" ofType:@"dat"];
         std::string modelFileNameCString = [modelFileName UTF8String];
-        
-        NSString *resnet = [[NSBundle mainBundle] pathForResource:@"dlib_face_recognition_resnet_model_v1" ofType:@"dat"];
-        std::string resnetCString = [resnet UTF8String];
+     
         dlib::deserialize(modelFileNameCString) >> sp;
     }
     return self;
