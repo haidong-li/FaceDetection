@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30A1F163C679CBC2A3EB99C4 /* libPods-FaceDetectionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96140AEA3812C53955762E2C /* libPods-FaceDetectionTests.a */; };
+		860C7A19218ACA96001D9230 /* shape_predictor_68_face_landmarks_small.dat in Resources */ = {isa = PBXBuildFile; fileRef = 860C7A18218ACA96001D9230 /* shape_predictor_68_face_landmarks_small.dat */; };
 		862091C02110784600C0CEDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862091BF2110784600C0CEDA /* AppDelegate.m */; };
 		862091C32110784600C0CEDA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 862091C22110784600C0CEDA /* ViewController.mm */; };
 		862091C62110784600C0CEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862091C42110784600C0CEDA /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		56C493C30F5698B9C416B143 /* Pods-FaceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceDetection/Pods-FaceDetection.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF5809393407BC852663AA3 /* libPods-FaceDetectionUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceDetectionUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		793D8142AD6889978EB41F94 /* libPods-FaceDetection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceDetection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		860C7A18218ACA96001D9230 /* shape_predictor_68_face_landmarks_small.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks_small.dat; sourceTree = "<group>"; };
 		862091BB2110784600C0CEDA /* FaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		862091BE2110784600C0CEDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		862091BF2110784600C0CEDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				86545FB92121635D002A56F1 /* 1.jpg */,
 				86C853152112ABBE005AF42D /* libdlib.a */,
 				862091BE2110784600C0CEDA /* AppDelegate.h */,
+				860C7A18218ACA96001D9230 /* shape_predictor_68_face_landmarks_small.dat */,
 				862091BF2110784600C0CEDA /* AppDelegate.m */,
 				862091C12110784600C0CEDA /* ViewController.h */,
 				862091C22110784600C0CEDA /* ViewController.mm */,
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				862091CB2110784A00C0CEDA /* LaunchScreen.storyboard in Resources */,
+				860C7A19218ACA96001D9230 /* shape_predictor_68_face_landmarks_small.dat in Resources */,
 				862091C82110784A00C0CEDA /* Assets.xcassets in Resources */,
 				862091C62110784600C0CEDA /* Main.storyboard in Resources */,
 				86545FBA2121635D002A56F1 /* 1.jpg in Resources */,
