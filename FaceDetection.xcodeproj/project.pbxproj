@@ -19,7 +19,6 @@
 		862091F4211083D500C0CEDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862091F3211083D500C0CEDA /* AVFoundation.framework */; };
 		862091F82110841100C0CEDA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862091F72110841100C0CEDA /* CoreMedia.framework */; };
 		86545FBA2121635D002A56F1 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86545FB92121635D002A56F1 /* 1.jpg */; };
-		86A39B342112D7F800D84397 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A39B332112D7F800D84397 /* opencv2.framework */; };
 		86C8583F2112ABC4005AF42D /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C853152112ABBE005AF42D /* libdlib.a */; };
 		86C8597B2112AF02005AF42D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C8597A2112AF02005AF42D /* AssetsLibrary.framework */; };
 		86C8597D2112AF08005AF42D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C8597C2112AF08005AF42D /* Accelerate.framework */; };
@@ -71,7 +70,6 @@
 		862091F5211083FE00C0CEDA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		862091F72110841100C0CEDA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		86545FB92121635D002A56F1 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		86A39B332112D7F800D84397 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		86C853152112ABBE005AF42D /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdlib.a; sourceTree = "<group>"; };
 		86C8597A2112AF02005AF42D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		86C8597C2112AF08005AF42D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -91,7 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				86FA1859211974BF0013AD95 /* OpenGLES.framework in Frameworks */,
-				86A39B342112D7F800D84397 /* opencv2.framework in Frameworks */,
 				86C8597D2112AF08005AF42D /* Accelerate.framework in Frameworks */,
 				86C8597B2112AF02005AF42D /* AssetsLibrary.framework in Frameworks */,
 				862091F82110841100C0CEDA /* CoreMedia.framework in Frameworks */,
@@ -149,7 +146,6 @@
 				86C853152112ABBE005AF42D /* libdlib.a */,
 				862091BE2110784600C0CEDA /* AppDelegate.h */,
 				862091BF2110784600C0CEDA /* AppDelegate.m */,
-				86A39B332112D7F800D84397 /* opencv2.framework */,
 				862091C12110784600C0CEDA /* ViewController.h */,
 				862091C22110784600C0CEDA /* ViewController.mm */,
 				86C8597E2112AF96005AF42D /* FaceDlibWrapper.h */,
