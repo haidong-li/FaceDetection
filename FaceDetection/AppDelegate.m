@@ -8,7 +8,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MtcnnDetectionViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[MtcnnDetectionViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow makeKeyAndVisible];
+    
+    
     return YES;
 }
 

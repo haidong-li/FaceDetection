@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30A1F163C679CBC2A3EB99C4 /* libPods-FaceDetectionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96140AEA3812C53955762E2C /* libPods-FaceDetectionTests.a */; };
+		8604A901218C2C3F00FEE47C /* FaceMtcnnWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8604A900218C2C3F00FEE47C /* FaceMtcnnWrapper.mm */; };
+		8604A904218C2D8B00FEE47C /* FaceMtcnn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8604A902218C2D8B00FEE47C /* FaceMtcnn.cpp */; };
 		860C7A1F218ACBE9001D9230 /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = 860C7A1E218ACBE9001D9230 /* shape_predictor_68_face_landmarks.dat */; };
 		860C7A21218ACF7B001D9230 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C7A20218ACF7A001D9230 /* opencv2.framework */; };
 		862091C02110784600C0CEDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862091BF2110784600C0CEDA /* AppDelegate.m */; };
@@ -25,6 +27,23 @@
 		86C8597B2112AF02005AF42D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C8597A2112AF02005AF42D /* AssetsLibrary.framework */; };
 		86C8597D2112AF08005AF42D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C8597C2112AF08005AF42D /* Accelerate.framework */; };
 		86C859802112AF96005AF42D /* FaceDlibWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86C8597F2112AF96005AF42D /* FaceDlibWrapper.mm */; };
+		86E7804C2192BE420078A49A /* mtcnn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86E7804B2192BE410078A49A /* mtcnn.cpp */; };
+		86E7805A2192BE790078A49A /* det2.param in Resources */ = {isa = PBXBuildFile; fileRef = 86E7804E2192BE770078A49A /* det2.param */; };
+		86E7805B2192BE790078A49A /* det3.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 86E7804F2192BE780078A49A /* det3.prototxt */; };
+		86E7805C2192BE790078A49A /* det1.param in Resources */ = {isa = PBXBuildFile; fileRef = 86E780502192BE780078A49A /* det1.param */; };
+		86E7805D2192BE790078A49A /* det3.param in Resources */ = {isa = PBXBuildFile; fileRef = 86E780512192BE780078A49A /* det3.param */; };
+		86E7805E2192BE790078A49A /* det1.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 86E780522192BE780078A49A /* det1.prototxt */; };
+		86E7805F2192BE790078A49A /* det2.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 86E780532192BE780078A49A /* det2.caffemodel */; };
+		86E780602192BE790078A49A /* det1.bin in Resources */ = {isa = PBXBuildFile; fileRef = 86E780542192BE780078A49A /* det1.bin */; };
+		86E780612192BE790078A49A /* det1.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 86E780552192BE780078A49A /* det1.caffemodel */; };
+		86E780622192BE790078A49A /* det2.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 86E780562192BE790078A49A /* det2.prototxt */; };
+		86E780632192BE790078A49A /* det3.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 86E780572192BE790078A49A /* det3.caffemodel */; };
+		86E780642192BE790078A49A /* det2.bin in Resources */ = {isa = PBXBuildFile; fileRef = 86E780582192BE790078A49A /* det2.bin */; };
+		86E780652192BE790078A49A /* det3.bin in Resources */ = {isa = PBXBuildFile; fileRef = 86E780592192BE790078A49A /* det3.bin */; };
+		86E780682192BF530078A49A /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E780662192BF530078A49A /* ncnn.framework */; };
+		86E780692192BF530078A49A /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E780672192BF530078A49A /* openmp.framework */; };
+		86E7806C2192C2600078A49A /* MtcnnDetectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86E7806B2192C2600078A49A /* MtcnnDetectionViewController.mm */; };
+		86E7806F2192C7290078A49A /* Face.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E7806E2192C7290078A49A /* Face.m */; };
 		86FA1859211974BF0013AD95 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA1858211974BF0013AD95 /* OpenGLES.framework */; };
 		C9AD7C67C150E95833276FCC /* libPods-FaceDetectionUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF5809393407BC852663AA3 /* libPods-FaceDetectionUITests.a */; };
 		F43AD790F2C4D200ED87552E /* libPods-FaceDetection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 793D8142AD6889978EB41F94 /* libPods-FaceDetection.a */; };
@@ -52,6 +71,10 @@
 		56C493C30F5698B9C416B143 /* Pods-FaceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceDetection/Pods-FaceDetection.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF5809393407BC852663AA3 /* libPods-FaceDetectionUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceDetectionUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		793D8142AD6889978EB41F94 /* libPods-FaceDetection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceDetection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8604A8FF218C2C3F00FEE47C /* FaceMtcnnWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceMtcnnWrapper.h; sourceTree = "<group>"; };
+		8604A900218C2C3F00FEE47C /* FaceMtcnnWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceMtcnnWrapper.mm; sourceTree = "<group>"; };
+		8604A902218C2D8B00FEE47C /* FaceMtcnn.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceMtcnn.cpp; sourceTree = "<group>"; };
+		8604A903218C2D8B00FEE47C /* FaceMtcnn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceMtcnn.hpp; sourceTree = "<group>"; };
 		860C7A1E218ACBE9001D9230 /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
 		860C7A20218ACF7A001D9230 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		862091BB2110784600C0CEDA /* FaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +102,26 @@
 		86C8597C2112AF08005AF42D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		86C8597E2112AF96005AF42D /* FaceDlibWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDlibWrapper.h; sourceTree = "<group>"; };
 		86C8597F2112AF96005AF42D /* FaceDlibWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDlibWrapper.mm; sourceTree = "<group>"; };
+		86E7804A2192BE410078A49A /* mtcnn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtcnn.h; sourceTree = "<group>"; };
+		86E7804B2192BE410078A49A /* mtcnn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mtcnn.cpp; sourceTree = "<group>"; };
+		86E7804E2192BE770078A49A /* det2.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det2.param; sourceTree = "<group>"; };
+		86E7804F2192BE780078A49A /* det3.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det3.prototxt; sourceTree = "<group>"; };
+		86E780502192BE780078A49A /* det1.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det1.param; sourceTree = "<group>"; };
+		86E780512192BE780078A49A /* det3.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det3.param; sourceTree = "<group>"; };
+		86E780522192BE780078A49A /* det1.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det1.prototxt; sourceTree = "<group>"; };
+		86E780532192BE780078A49A /* det2.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = det2.caffemodel; sourceTree = "<group>"; };
+		86E780542192BE780078A49A /* det1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = det1.bin; sourceTree = "<group>"; };
+		86E780552192BE780078A49A /* det1.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = det1.caffemodel; sourceTree = "<group>"; };
+		86E780562192BE790078A49A /* det2.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = det2.prototxt; sourceTree = "<group>"; };
+		86E780572192BE790078A49A /* det3.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = det3.caffemodel; sourceTree = "<group>"; };
+		86E780582192BE790078A49A /* det2.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = det2.bin; sourceTree = "<group>"; };
+		86E780592192BE790078A49A /* det3.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = det3.bin; sourceTree = "<group>"; };
+		86E780662192BF530078A49A /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
+		86E780672192BF530078A49A /* openmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openmp.framework; sourceTree = "<group>"; };
+		86E7806A2192C2600078A49A /* MtcnnDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MtcnnDetectionViewController.h; sourceTree = "<group>"; };
+		86E7806B2192C2600078A49A /* MtcnnDetectionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MtcnnDetectionViewController.mm; sourceTree = "<group>"; };
+		86E7806D2192C7290078A49A /* Face.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
+		86E7806E2192C7290078A49A /* Face.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Face.m; sourceTree = "<group>"; };
 		86F6B713A7B3F7688149A8B0 /* Pods-FaceDetectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceDetectionTests/Pods-FaceDetectionTests.release.xcconfig"; sourceTree = "<group>"; };
 		86FA1858211974BF0013AD95 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		96140AEA3812C53955762E2C /* libPods-FaceDetectionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceDetectionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,8 +135,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E780682192BF530078A49A /* ncnn.framework in Frameworks */,
 				86FA1859211974BF0013AD95 /* OpenGLES.framework in Frameworks */,
 				86C8597D2112AF08005AF42D /* Accelerate.framework in Frameworks */,
+				86E780692192BF530078A49A /* openmp.framework in Frameworks */,
 				860C7A21218ACF7B001D9230 /* opencv2.framework in Frameworks */,
 				86C8597B2112AF02005AF42D /* AssetsLibrary.framework in Frameworks */,
 				862091F82110841100C0CEDA /* CoreMedia.framework in Frameworks */,
@@ -147,6 +192,9 @@
 		862091BD2110784600C0CEDA /* FaceDetection */ = {
 			isa = PBXGroup;
 			children = (
+				86E7804D2192BE680078A49A /* models */,
+				86E780662192BF530078A49A /* ncnn.framework */,
+				86E780672192BF530078A49A /* openmp.framework */,
 				86545FB92121635D002A56F1 /* 1.jpg */,
 				86C853152112ABBE005AF42D /* libdlib.a */,
 				860C7A1E218ACBE9001D9230 /* shape_predictor_68_face_landmarks.dat */,
@@ -154,8 +202,18 @@
 				862091BF2110784600C0CEDA /* AppDelegate.m */,
 				862091C12110784600C0CEDA /* ViewController.h */,
 				862091C22110784600C0CEDA /* ViewController.mm */,
+				86E7806A2192C2600078A49A /* MtcnnDetectionViewController.h */,
+				86E7806B2192C2600078A49A /* MtcnnDetectionViewController.mm */,
+				8604A8FF218C2C3F00FEE47C /* FaceMtcnnWrapper.h */,
+				8604A900218C2C3F00FEE47C /* FaceMtcnnWrapper.mm */,
+				8604A902218C2D8B00FEE47C /* FaceMtcnn.cpp */,
+				8604A903218C2D8B00FEE47C /* FaceMtcnn.hpp */,
+				86E7806D2192C7290078A49A /* Face.h */,
+				86E7806E2192C7290078A49A /* Face.m */,
 				86C8597E2112AF96005AF42D /* FaceDlibWrapper.h */,
 				86C8597F2112AF96005AF42D /* FaceDlibWrapper.mm */,
+				86E7804B2192BE410078A49A /* mtcnn.cpp */,
+				86E7804A2192BE410078A49A /* mtcnn.h */,
 				860C7A20218ACF7A001D9230 /* opencv2.framework */,
 				862091C42110784600C0CEDA /* Main.storyboard */,
 				862091C72110784A00C0CEDA /* Assets.xcassets */,
@@ -198,6 +256,25 @@
 				5EF5809393407BC852663AA3 /* libPods-FaceDetectionUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86E7804D2192BE680078A49A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				86E780542192BE780078A49A /* det1.bin */,
+				86E780552192BE780078A49A /* det1.caffemodel */,
+				86E780502192BE780078A49A /* det1.param */,
+				86E780522192BE780078A49A /* det1.prototxt */,
+				86E780582192BE790078A49A /* det2.bin */,
+				86E780532192BE780078A49A /* det2.caffemodel */,
+				86E7804E2192BE770078A49A /* det2.param */,
+				86E780562192BE790078A49A /* det2.prototxt */,
+				86E780592192BE790078A49A /* det3.bin */,
+				86E780572192BE790078A49A /* det3.caffemodel */,
+				86E780512192BE780078A49A /* det3.param */,
+				86E7804F2192BE780078A49A /* det3.prototxt */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		B4F45EBF5731B86921ABBECC /* Pods */ = {
@@ -321,10 +398,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				862091CB2110784A00C0CEDA /* LaunchScreen.storyboard in Resources */,
+				86E780612192BE790078A49A /* det1.caffemodel in Resources */,
+				86E780652192BE790078A49A /* det3.bin in Resources */,
+				86E780642192BE790078A49A /* det2.bin in Resources */,
 				862091C82110784A00C0CEDA /* Assets.xcassets in Resources */,
+				86E7805C2192BE790078A49A /* det1.param in Resources */,
+				86E7805D2192BE790078A49A /* det3.param in Resources */,
+				86E7805F2192BE790078A49A /* det2.caffemodel in Resources */,
 				860C7A1F218ACBE9001D9230 /* shape_predictor_68_face_landmarks.dat in Resources */,
+				86E780632192BE790078A49A /* det3.caffemodel in Resources */,
 				862091C62110784600C0CEDA /* Main.storyboard in Resources */,
 				86545FBA2121635D002A56F1 /* 1.jpg in Resources */,
+				86E7805A2192BE790078A49A /* det2.param in Resources */,
+				86E7805B2192BE790078A49A /* det3.prototxt in Resources */,
+				86E780602192BE790078A49A /* det1.bin in Resources */,
+				86E7805E2192BE790078A49A /* det1.prototxt in Resources */,
+				86E780622192BE790078A49A /* det2.prototxt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +524,12 @@
 				862091C32110784600C0CEDA /* ViewController.mm in Sources */,
 				862091CE2110784A00C0CEDA /* main.m in Sources */,
 				862091C02110784600C0CEDA /* AppDelegate.m in Sources */,
+				8604A901218C2C3F00FEE47C /* FaceMtcnnWrapper.mm in Sources */,
+				86E7804C2192BE420078A49A /* mtcnn.cpp in Sources */,
+				8604A904218C2D8B00FEE47C /* FaceMtcnn.cpp in Sources */,
 				86C859802112AF96005AF42D /* FaceDlibWrapper.mm in Sources */,
+				86E7806F2192C7290078A49A /* Face.m in Sources */,
+				86E7806C2192C2600078A49A /* MtcnnDetectionViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +701,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5224E668EL;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FaceDetection",
@@ -618,7 +713,10 @@
 					DDLIB_USE_BLAS,
 					DLIB_USE_LAPACK,
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FaceDetection\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/FaceDetection\"",
+					"\"$(SRCROOT)/FaceDetection/opencv2.framework/Headers\"",
+				);
 				INFOPLIST_FILE = FaceDetection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -642,6 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5224E668EL;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FaceDetection",
@@ -653,7 +752,10 @@
 					DDLIB_USE_BLAS,
 					DLIB_USE_LAPACK,
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FaceDetection\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/FaceDetection\"",
+					"\"$(SRCROOT)/FaceDetection/opencv2.framework/Headers\"",
+				);
 				INFOPLIST_FILE = FaceDetection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
